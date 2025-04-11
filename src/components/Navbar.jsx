@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import anuImage from "../assets/anu.jpg";
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
   useEffect(() => {
@@ -10,12 +11,11 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
         <div className="flex justify-between items-center h-16">
           <a href="#home" className="font-mono text-xl font-bold text-white">
             <img
-    src="../../public/anu.jpg"
+    src={anuImage}
     alt="Anu.tech Logo"
     className="w-15 h-15 rounded-full"
   />
           </a>
-
           <div
             className="w-7 h-5 relative cursor-pointer z-40 md:hidden mr-5"
             onClick={() => setMenuOpen((prev) => !prev)}
